@@ -1,4 +1,8 @@
 package com.videoclub.IberianMovies.repository;
 
-public class MovieRepository {
+import com.videoclub.IberianMovies.model.Movie;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface MovieRepository extends JpaRepository<Movie, Integer> {
+
 }
