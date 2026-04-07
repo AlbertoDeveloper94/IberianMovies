@@ -21,8 +21,8 @@ public class MovieService {
         return movieRepository.findAll();
     }
 
-    public void saveMovie(Movie movie) {
-        movieRepository.save(movie);
+    public Movie addMovie(Movie movie) {
+        return movieRepository.save(movie);
     }
 
     public void deleteMovie(int id) {
