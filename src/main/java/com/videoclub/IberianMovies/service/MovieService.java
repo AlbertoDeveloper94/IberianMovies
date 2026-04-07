@@ -30,7 +30,7 @@ public class MovieService {
     }
 
     public List<Movie> getAllByOrder(){
-        return movieRepository.findAll(Sort.by(Sort.Direction.ASC, "name"));
+        return movieRepository.findAll(Sort.by(Sort.Direction.ASC, "title"));
     }
 
     public Optional<Movie> getMovieById(int id){
